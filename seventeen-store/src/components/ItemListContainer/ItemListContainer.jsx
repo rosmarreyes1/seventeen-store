@@ -1,14 +1,10 @@
-import Saludo from "./Saludo/Saludo";
+
 
 const ItemListContainer = () => {
-    const saludo = { greeting: "Bienvenidos a Seventeen Store" }
 
-    return (
-        <div style={{textAlign: 'center'}}>
-            <Saludo greeting={saludo.greeting} />
-        </div>
-    )
-
+  return (
+    <div>ItemListContainer</div>
+  )
 }
 
-export default ItemListContainer;
+export default ItemListContainer

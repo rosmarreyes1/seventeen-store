@@ -1,15 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import  { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./components/Nav/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import { Contact } from './pages/Contact';
+import { FAQs } from './pages/FAQs';
+import { Error404 } from './pages/Error404';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <BrowserRouter>
       <NavBar/>
-      </header>
-      <ItemListContainer/>
+      <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path="category/:id" element={<ItemListContainer/>}/>
+          <Route path="contact" element={<Contact/>}/>
+          <Route path="faqs" element={<FAQs/>}/>
+          <Route path='*' element={<Error404/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
