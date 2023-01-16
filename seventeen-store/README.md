@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Seveteen Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En el proyecto se presenta una pagina de venta de capsulas cafe, donde se visualizan distintos tipos segun su intensidad, para el consumo del mismo. 
 
-## Available Scripts
+Es un producto que me gusta mucho, por lo que escogi dicho tema, para conocer otros tipos de cafe que sean de mi interes.
+***
 
-In the project directory, you can run:
+### Instalar el software:
+Para instalar el software, tienes que seguir los siguientes pasos
+```
+git clone https://github.com/rosmarreyes1/seventeen-store.git
+cd ../direccion/de/tu/archivo
+npm i
+npm start
+```
+Abre [http://localhost:3000](http://localhost:3000) para ingresar al archivo, si el mismo no ingresa de manera inmediata.
+***
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Componentes y frameworks utilizados:
+#### modules.css
+Todos los estilos fueron realizados con CSS, utilizando styles.module.css, creando de esta forma clases unicas, permitiendo que no se repitan las mismas y no afecten estilos utilizados. 
+#### React-bootstrap
+Se utilizo React-Bootstrap para algunas dependencias y componentes. Para el Navbar y para la card de los productos.
+#### Aos Animation
+El framework de animaciones para hacer Scroll, Aos, se utilizo para darle animaciones ligeras y lindas a la vista a la hora de hacer scroll y tener una mejor experiencia de usuario
+#### Firebase
+La base de datos que proporciona Google, se utilizo para darle un poco mas de profundidad al proyecto. Proporcionando la posibilidad de guardar algunos objetos y tambien para guardar la compra final. Generando, de igual manera, una buena experiencia de usuario. 
+#### React-icons
+Se utilizaron los iconos que proporciona React, para tener un origen unico de los mismos. 
+#### React-Router-Dom
+El router dom, lo que permite una renderizacion mas rapida, proporcionando una mejor navegabilidad a la hora de ingresar a todas las partes de la pagina. 
+***
+### Versionado
+* Aos: 2.3.4
+* Bootstrap: 5.1.3
+* Firebase: 9.8.4
+* React: 18.1.0
+* React-bootstrap: 2.4.0
+* React-dom: 18.1.0
+* React-icons: 4.4.0
+* React-router-dom: 6.3.0

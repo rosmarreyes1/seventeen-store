@@ -1,0 +1,342 @@
+p{
+    margin: 0;
+}
+.sectionCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.containerCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 2rem;
+    padding: 1rem 0;
+}
+.containerCart img{
+    width: 100px;
+}
+.productCart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.productCart .buttonRemove{
+    margin-bottom: 1.5rem;
+
+}
+.productCart div{
+    margin: 0 1rem;
+    text-align: center;
+    width: 6rem;
+}
+.productCart h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.containerPrice{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin: 0 3rem;
+    padding: 3rem 0;
+    border-radius: 15px;
+    border: solid;
+    border-color: black;
+}
+.containerPrice h2:first-child{
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.containerPrice div:nth-child(2) p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.containerPrice button{
+    margin: 0.5rem 15px;
+}
+.buttonRemove{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    border-color:#8d0801;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.buttonRemove:hover{
+    background-color: #8d0801;
+    border-color: white;
+    transition: 0.3s all ease;
+    color: white;
+}
+.buttonClear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fff;
+    border-color: #8d0801;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: #000;
+}
+
+.buttonClear:hover{
+    background-color: #8d0801;
+    border-color: #fff;
+    transition: 0.3s all ease;
+    color: #fff;
+}
+.buttonFinish{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: black;
+    border-color:white;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.buttonFinish a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.buttonFinish:hover{
+    background-color: rgb(38, 38, 70);
+    border-color: white;
+    transition: 0.3s all ease;
+    color: white;
+}
+svg{
+    font-size: 1.5rem;
+}
+
+/* Cart Vacio */
+
+.cartEmpty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.cartEmpty h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.cartEmpty a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.cartEmpty img{
+    width: 350px;
+}
+
+/* Checkout form */
+
+.sectionCheckout{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.sectionCheckout form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    border: solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.sectionCheckout label{
+    margin: 0 2rem;
+}
+.sectionCheckout p{
+    margin: 0 2rem;
+    margin-bottom: 1rem;
+    color: red;
+    font-weight: bold;
+}
+.sectionCheckout input{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin:  0 2rem;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+.sectionCheckout button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #0d0d0d;
+    border-color:white;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: white;
+}
+.sectionCheckout button:hover{
+    background-color: white;
+    border-color: #040404;
+    transition: 0.3s all ease;
+    color: black;
+}
+
+/* Section Finish */
+.sectionFinish{
+    min-height: 100vh;
+}
+.sectionFinish div{
+    border: solid;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.sectionFinish h2{
+    font-weight: bold;
+    margin-bottom: 3.5rem;
+}
+.sectionFinish a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.sectionFinish p{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #090909;
+    text-decoration: underline;
+    border: #000;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 320px) and (max-width: 1244px){
+    .sectionCart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .containerCart{
+        width: 100%;
+        margin: 2rem;
+    }
+    .containerCart h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .containerCart img{
+        width: calc(100%/6.5);
+        z-index: -1;
+    }
+    .productCart{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .productCart div{
+        margin: 0;
+        padding: 0 0.5rem;
+    }
+    .productCart h3{
+        font-size: 1rem;
+    }
+    .productCart p{
+        font-size: 0.7rem;
+    }
+    .buttonRemove{
+        width: 3rem;
+    }
+    .containerPrice{
+        width: 100%;
+        margin: 0 0 3rem 0;
+    }
+    .sectionCheckout{
+        padding: 2rem;
+    }
+    .sectionCheckout form{
+        width: 100%;
+        align-items: center;
+    }
+    .sectionCheckout div{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerPrice div:nth-child(2) p{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1244px) {
+    .sectionCart{
+        padding: 1rem;
+    }
+    .productCart h3{
+        font-size: 1.5rem;
+    }
+    .productCart p{
+        font-size: 1rem;
+    }
+    .productCart div{
+        margin: 0 0.75rem;
+    }
+    .buttonRemove{
+        width: 5rem;
+    }
+}

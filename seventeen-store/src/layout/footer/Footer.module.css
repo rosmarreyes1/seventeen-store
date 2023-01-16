@@ -1,0 +1,99 @@
+footer{
+    width: 100%;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 100px;
+    grid-area: "footer";
+  }
+  footer ul{
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  footer h3{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+  }
+  footer section{
+    margin-top: 1rem;
+  }
+footer section:nth-child(2){
+  margin-top: 50px;
+}
+
+.sectionRedes{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  font-size: 0.5rem;
+}
+.sectionRedes div:nth-child(2){
+  display: flex;
+  gap:1rem;
+  width: 8px;
+}
+.sectionRedes svg{
+  font-size: 1.3rem;
+}
+.facebook{
+  background-color: #000;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100%;
+}
+.facebook svg{
+  text-decoration: none;
+  color:#3b5998;
+
+}
+.instagram{
+  background-color: #000;
+  padding: 8px;
+  display: flex;
+  width: fit-content;
+  border-radius: 100%;
+}
+.instagram svg{
+  text-decoration: none;
+  color: #C13584;
+}
+
+@media screen and (max-width: 980px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+  }
+  footer section:first-child{
+    width: fit-content;
+    
+  }
+  .sectionRedes{
+    height: calc(100% / 5);
+    position: absolute;
+    right: 0;
+    margin-top: auto;
+  }
+  .sectionRedes div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+}

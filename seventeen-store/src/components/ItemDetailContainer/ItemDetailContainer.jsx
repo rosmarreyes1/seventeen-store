@@ -1,25 +1,37 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
-import MyPromise from "../../utils/MyPromise";
-import Data from "../../data/Data";
+import {useParams} from "react-router-dom"
 import ItemDetails from "./ItemDetails";
+import { doc, getDoc } from "firebase/firestore";
+import db from "../../firebase/config";
+import { Spinner } from "react-bootstrap";
+import styles from './ItemDetailsContainer.module.css'
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = () =>{
     const [detail, setDetail] = useState()
-    const { id } = useParams()
-
+    const { id } = useParams([])
+    
 
     useEffect(() => {
-        MyPromise(2000, Data)
-            .then(
-                (res) => setDetail(res.find(el => el.id === parseFloat(id)))
-            )
-    }, [detail])
+        const detailRef = doc(db, "Products", id)
+        getDoc(detailRef)
+        .then((snapshot) =>{
+            if(snapshot.exists()){
+                setDetail({id: snapshot.id, ...snapshot.data()})
+            }
+        })
+        .catch(err => console.log(err))
+        },[id])
 
     return (
-        <section>
-            {detail ? <ItemDetails item={detail} /> : <p>Obteniendo producto...</p>}
-        </section>
+        <main className={styles.detailContainer}>
+            {detail 
+            ?
+            <ItemDetails item={detail}/> 
+            :
+            <Spinner animation="grow" style={{color: "#5b341c"}}/> }
+        </main>
     )
 }
+
+
 export default ItemDetailContainer  

@@ -1,7 +1,14 @@
-const   MyPromise = (time, task) =>{
-    return new Promise((resolve) => {
+import Products from "./Products"
+
+const MyPromise = (time, task) =>{
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(task)
+            if(Products.length>0){
+                resolve(task)
+            }else{
+                reject("Error")
+                console.log(reject)
+            }
         }, time)
         })
 }

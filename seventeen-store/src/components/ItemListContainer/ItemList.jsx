@@ -1,15 +1,15 @@
-import Item from "./Item"
+import React from 'react'
+import Item from './Item'
 
-const ItemList = ({Data}) => {
-return (
-    Data.map(p => 
+export const ItemList = ({item}) => {
+  return (
+    item.map(p => 
         <Item
-        key={p.id}
+            key={p.id}
             {...p}
         />
         )
-)
+  )
 }
 
 export default ItemList
-
